@@ -19,7 +19,7 @@
 	  <c:forEach items="${newProductList}" var="productVO">
 	    <div id="item">
 	      <img src="product_images/${productVO.image}"/>
-	      <h3><a href="product_detail?pseq=${productVO.pseq}">${productVO.type}</a></h3>
+	      <h3><a href="product_detail?pseq=${productVO.pseq}">${productVO.name}</a></h3>
 	      <p class="org">${productVO.price}</p>
 	    </div>
 	  </c:forEach>
@@ -31,7 +31,7 @@
          <c:forEach items="${bestProductList}" var="productVO">
            <div id="item">
              <img src="product_images/${productVO.image}"/>
-	         <h3><a href="product_detail?pseq=${productVO.pseq}">${productVO.type}</a></h3>
+	         <h3><a href="product_detail?pseq=${productVO.pseq}">${productVO.name}</a></h3>
 	         <p class="org">${productVO.price}</p>
            </div>
          </c:forEach>
