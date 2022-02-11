@@ -17,7 +17,7 @@ body{
 }
 
 #wrap header{
-    width:1200px; 
+    width:1100px; 
     text-align:left;
     margin:0;
     margin-right:auto;
@@ -80,7 +80,6 @@ nav#nav_menu a{
 }
 
 nav#nav_menu a:hover{
-    
     background-repeat:repeat-x;
     background-position:bottom;
     color:rgb(69, 159, 109);
@@ -131,17 +130,14 @@ nav#nav_menu a:hover{
     margin-bottom: 100px;
     
 }
-#login .userid{
+#login .userid,#login .userpwd{
     margin-bottom: 20px;
 }
 
-#login .userpwd{
-    margin-bottom: 50px;
-}
 #login .userid,#login .userpwd{
   background: transparent;
   border: none;
-  width: 170px;
+  width: 250px;
   height: 50px;
   color: rgb(118, 173, 102) !important;
   border: 1px solid transparent;
@@ -152,8 +148,46 @@ nav#nav_menu a:hover{
   
 }
 
-#login.userid ,#login.userpwd:hover, #login.userid,#login.userpwd:focus{
+#login .userid:hover ,#login .userpwd:hover, #login .userid:focus,#login .userpwd:focus{
     background: transparent;
+    outline:none;
     box-shadow: none;
-    border-color: rgba(179, 26, 26, 0.4);
+    border-color: rgba(32, 45, 102, 0.4);
+}
+
+#buttons button{
+    margin-bottom: 35px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width: 280px;
+    height: 50px;
+    border: 1px solid transparent;
+    background: rgba(44, 150, 72, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:16px;
+    color:#0e411d;
+}
+
+#buttons input{
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width:130px;
+    height:30px;
+    border: 1px solid transparent;
+    background: rgba(201, 245, 140, 0.49);
+}
+
+#buttons button:hover ,#buttons button:focus {
+    background: rgba(203, 245, 144,0.7);
+    outline:none;
+    box-shadow: none;
+}
+
+#buttons input:hover ,#buttons input:focus {
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
 }

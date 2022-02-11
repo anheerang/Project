@@ -8,6 +8,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="login.css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+</style>
 </head>
 <body>
 <div id="wrap">

@@ -7,15 +7,15 @@
     <form method="post" action="login">
         <input name="id" class="userid" type="text" placeholder="USERID"><br>
         <input name="pwd" class="userpwd" type="password" placeholder="PASSWORD"><br>
-      <div class="clear"></div>
+		<div class="clear"></div>
       
       <div id="buttons">
-        <input type="submit" value="Login" class="submit">
-        <input type="button" value="Sign Up" class="cancel" 
-                onclick="location='contract'"> <br>
-        <input type="button" value="forgot ID and Password?" class="submit"
+        <button type="submit"  class="submit">LOGIN</button><br>
+        <input type="button" value="회원가입" class="cancel" 
+                onclick="location='contract'"> 
+        <input type="button" value="아이디/비밀번호찾기" class="submit"
                 onclick="find_id_form()">
       </div>
     </form>
-</div>
+  </div>
 <%@ include file="../footer.jsp" %>
