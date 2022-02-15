@@ -1,3 +1,4 @@
+
 body{
     font-family: Montserrat, sans-serif ;
     background-color: rgb(252, 249, 234);
@@ -52,12 +53,12 @@ body{
 
 nav#nav_menu{
     margin: 25px 0;
-    float:right;
+    display: inline-block;
+    margin-left:20px;
 }
 
 nav#nav_menu ul{
     list-style:none;
-    font-family:Montserrat, sans-serif;
 }
 
 nav#nav_menu ul li{
@@ -76,7 +77,6 @@ nav#nav_menu a{
 }
 
 nav#nav_menu a:hover{
-    
     background-repeat:repeat-x;
     background-position:bottom;
     color:rgb(69, 159, 109);
@@ -92,7 +92,7 @@ nav#nav_menu a:hover{
     padding: 20px ;
     text-align:center ;
     background-size: cover;
-    min-width: 100%;
+    
 }
 
 #front {
@@ -103,8 +103,328 @@ nav#nav_menu a:hover{
 #copy{
     text-align: center;
     margin-top:20px;
-    background-color:rgb(205, 226, 214) ;
+    background-color:rgb(225,243,213) ;
     height:95px;
     padding:45px 0 ;
     font-size:16px;
+}
+
+#out{
+    text-align: center;
+}
+#login{
+    position:relative;
+    display: inline-block;
+    margin:auto;
+    margin:80px 0;
+    width:700px;
+    height:500px;
+    background-image: url("images/login.jpeg");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+#login h1{
+    color:rgb(118, 173, 102);
+    margin-bottom: 100px;
+    
+}
+#login .userid{
+    margin-bottom: 20px;
+}
+
+#login .userpwd{
+    margin-bottom: 50px;
+}
+#login .userid,#login .userpwd{
+  background: transparent;
+  border: none;
+  width: 170px;
+  height: 50px;
+  color: rgb(118, 173, 102) !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+#login.userid ,#login.userpwd:hover, #login.userid,#login.userpwd:focus{
+    background: transparent;
+    box-shadow: none;
+    border-color: rgba(179, 26, 26, 0.4);
+}
+
+/* product테이블 css */
+
+article{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width:800px;
+    padding-right: 10px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+article h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom:3px double green;
+    display: inline;
+}
+
+#category{
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#category ul {
+    list-style: none;
+    margin:30px 0 0 50px;
+    padding:15px;
+    
+}
+
+#category ul li{
+    float:left;
+    font-size:20px;
+    font-weight: 350;
+    padding:10px;
+}
+
+
+/*#category input[type="checkbox"] { 체크박스사라지는설정
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+    }*/
+
+#item{
+    float:left;
+    margin:20px 0 0 50px;
+    width:700px;
+    text-align: center;
+    padding-top:60px;
+}
+
+#item img{
+    width: 190px;
+    height: 200px;
+}
+
+#item h3{
+    font-size:20px;
+    font-weight: 300;
+}
+
+#item p{
+    font-size: 17px;
+}
+
+#itemdetail{
+    margin-left:230px;
+}
+
+form fieldset{
+    width:1000px;
+    height:1000px;
+    padding-top:70px;
+    border:none ;
+    margin-top:80px;
+}
+
+form fieldset legend{
+    border-bottom : 1px solid black;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    color: #0e411d;
+}
+
+#itemdetail img{
+    width:250px;
+    height:250px;
+    padding:20px;
+}
+
+#itemdetail button{
+    margin-left:750px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width: 128px;
+    height: 30px;
+    border: 1px solid transparent;
+    background: rgba(250, 184, 60, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:16px;
+    color:#cb5e65;
+}
+
+#itemdetail button:hover , #itemdetail button:focus{
+    background: rgb(236, 157, 163);
+    color:rgb(57, 40, 42);
+    outline:none;
+    box-shadow: none;
+}
+
+#contents{
+    margin-top:50px;
+}
+
+#contents input{
+    background-color: transparent;
+    border:0 solid black;
+    padding:20px;
+}
+
+#contents , #contents input{
+    font-size: 24px;  
+}
+
+#rsvday ,#rsvtimes{
+    position:relative;
+    display:inline-block;
+    width:300px;
+    height:150px;
+    margin-top:50px;
+    font-size: 23px;
+}
+
+#buttons{
+    margin:120px 0 0 400px;
+}
+
+#buttons input{
+    margin-bottom: 20px;
+    margin-left:40px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border: 1px solid transparent;
+    background: rgba(44, 150, 72, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:16px;
+    color:#0e411d;
+}
+
+#buttons input:hover ,#buttons input:focus {
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
+    color:rgb(232, 238, 197) !important;
+}
+
+/* prductRsv button */
+.buttons{
+    float:left ;
+    margin:40px 0 0 180px;
+    
+}
+.buttons input{
+    margin-bottom: 20px;
+    margin-left:40px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border: 1px solid transparent;
+    background: rgba(44, 150, 72, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:16px;
+    color:#0e411d;
+}
+
+.buttons input:hover ,#buttons input:focus {
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
+    color:rgb(232, 238, 197) !important;
+}
+
+#rsvtable{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width:1000px;
+    height:400px;
+    margin:60px 0 0 350px;
+}
+
+#rsvtable table{
+    border:2px solid rgb(32, 100, 54);
+    border-collapse: collapse;
+}
+
+#rsvtable table th,#rsvtable table td{
+    width:250px;
+    height:50px;
+    border:1px solid rgb(32, 100, 54);
+}
+
+#rsvtable img{
+    width:200px;
+    height:200px;
+}
+
+.rsvConfirm{
+    text-align:center;
+    margin:100px 0 0 40px;
+    font-size:30px;
+    font-weight:400;
+    color:rgb(32, 100, 54);
+}
+
+/*rsvList*/
+#sub_menu{
+    float:left;
+    width:250px;
+    margin:20px 0 ;
+}
+
+#sub_menu ul{
+    list-style: none;
+}
+
+#sub_menu li{
+    padding:10px;
+}
+
+#sub_menu a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding:20px;
+    border-radius: 30px;
+    background: transparent;
+    border: none;
+    width: 130px;
+    height: 30px;
+    border: 1px solid transparent;
+    background: rgba(182, 235, 86, 0.445);
+    font-size:20px;
+    color:#0e411d;
+}
+
+#sub_menu a:hover,#sub_menu a:focus{
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
+    color:rgb(232, 238, 197) !important;
 }
