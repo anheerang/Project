@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>아이디 중복체크</title>
 <style type="text/css">
-
+<!--TODO-->
 </style>
 <script type="text/javascript">
 function idok(){

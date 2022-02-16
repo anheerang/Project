@@ -33,7 +33,7 @@
        		<a href="마이페이지화면">MY PAGE</a>
        	</li>
        	<li>
-       		<a href="부동산에관한 화면">ABOUT</a>
+       		<a href="후기에관한 화면">REVIEW</a>
        	</li>
        	<li>
        		<a href="qna화면">Q&amp;A</a>
