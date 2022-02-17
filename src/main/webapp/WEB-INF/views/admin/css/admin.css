@@ -1,0 +1,168 @@
+body{
+    background-color:rgba(119, 213, 72, 0.214);
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+   margin-left:200px;
+}
+
+#wrap{
+    width:1400px;
+    height:1000px;
+    text-align: center;
+    display: inline-block;
+}
+
+#loginform{
+    display: inline-block;
+}
+
+.clear{
+    clear:both;
+}
+
+.btn{
+    margin:30px 0 0 40px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width:100px;
+    height:40px;
+    border: 1px solid transparent;
+    background: rgba(169, 206, 117, 0.79);
+}
+
+.btn:hover,.btn:focus{
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
+    color:rgb(232, 238, 197) !important;
+}
+
+#workId,#workPw{
+  background: transparent;
+  border: none;
+  width: 150px;
+  height: 40px;
+  color: rgb(118, 173, 102) !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.58);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#workId:hover,#workPw:hover,#workId:focus,#workPw:focus{
+    background: transparent;
+    outline:none;
+    box-shadow: none;
+    border-color: rgba(32, 45, 102, 0.4);
+}
+
+nav#sub_menu{
+    display: inline-block;
+    border-top:3px solid rgb(90,196,74);
+    border-bottom: 1px dotted rgb(90,196,74) ;
+}
+
+nav#sub_menu ul{
+    list-style: none;
+    margin:15px 0 0 170px;
+}
+
+nav#sub_menu ul li{
+    float:left;
+    padding-right: 150px;
+    padding-bottom: 10px;
+}
+
+nav#sub_menu a{
+    color:rgb(10, 124, 245);
+}
+
+nav#sub_menu a:hover,nav#sub_menu a:focus{
+    background-position:bottom;
+    color:rgb(69, 159, 109);
+}
+
+#copy{
+    text-align: center;
+    margin:20px 0 0 30px;
+    background-color:rgb(217,239,206) ;
+    width:1350px;
+    height:95px;
+    padding:45px 0 ;
+    font-size:16px;
+}
+
+article{
+    min-height:700px;
+}
+
+article h1{
+    font-size:30px;
+    color:rgb(90,196,74);
+    margin-top:50px;
+}
+
+table#productList{
+    border-collapse: collapse; 
+	border-top: 2px solid rgb(80, 139, 74);
+	border-bottom: 1px solid rgb(80, 139, 74);
+	width: 80%; 
+	margin:30px 0 20px 160px;
+}
+
+#productList tr{
+    text-align: center;
+    border-bottom:1px solid rgb(69, 159, 109);
+}
+
+#productList td,th{
+    padding: 10px;
+}
+
+#key{
+  background: transparent;
+  border: none;
+  width: 150px;
+  height: 30px;
+  color: rgb(118, 173, 102) !important;
+  border: 1px solid transparent;
+  background: rgba(199, 221, 187, 0.58);
+  border-radius: 40px;
+}
+
+#key:hover,#key:focus{
+    background: transparent;
+    outline:none;
+    box-shadow: none;
+    border-color: rgba(32, 45, 102, 0.4);
+}
+
+#prod_form table input{
+    margin-right:-30px;
+}
+#list{
+    margin:50px 0 0 180px;
+}
+#list th{
+   background-color: rgba(90,196,74,0.3);
+   border-radius: 20px;
+}
+
+#list tr{
+    height:20px;    
+}
+
+#list td{
+    width:700px;
+    text-align:left;
+    padding: 15px;
+}
