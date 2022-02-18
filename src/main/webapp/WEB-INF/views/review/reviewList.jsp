@@ -21,7 +21,7 @@
                 <tr>
                     <td>${reviewVO.vseq}</td>
                     <td><a href="review_view?vseq=${reviewVO.vseq}">${reviewVO.subject}</a></td>
-                    <td>${qnaVO.id}</td>
+                    <td>${reviewVO.id}</td>
                     <td><fmt:formatDate value="${qnaVO.indate}" type="date"/>2022.02.18</td>
                 </tr>
             </c:forEach>

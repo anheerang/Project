@@ -20,9 +20,9 @@
                 <c:forEach items="${rsvList}" var="rsvVO">
                 <tr>
                     <td>${rsvVO.rseq}</td>
-                    <td><a href="product_detail?pseq=${productVO.pseq}">${productVO.name}</a></td>
+                    <td><a href="product_detail?pseq=${productVO.pseq}">${rsvVO.pname}</a></td>
                     <td><!-- ${rsvVO.rvdate}+${rsvVO.rvtime}-->2022년 2월 18일 2시</td>
-                    <td>${rsv_detailVO.result}</td>
+                    <td>${rsvVO.result}</td>
                     <td><a href="rsv_detail?rseq=${rsvVO.rseq}">조회</a></td>
                 </tr>
                 </c:forEach>
