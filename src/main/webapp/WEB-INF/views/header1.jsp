@@ -18,7 +18,15 @@
 <div id="wrap">
 <!--header.jsp-->
 <!-- 헤더파일 들어가는 곳 시작 -->
-	<header>
+		<header>
+	
+		<nav id="admin_menu">
+			<ul>
+				<li><a href="admin_login_form" style="font-size:14px;">ADMIN LOGIN</a></li>
+			</ul>	
+		</nav>
+	
+		<div class="clear"></div>
 	   <!-- 로고 들어가는 곳 시작 -->
 	   <div id="logo">
 	      <h1 class="main_logo"><a href="index">MY<span>HOME</span></a></h1>
