@@ -8,7 +8,7 @@
 	<div id="itemdetail">
 	  <form method="post" name="formm" id="theform">
 	  	<fieldset>
-	  	  <legend>집 상세 정보</legend>
+	  	  <legend style="border:none;">집 상세 정보</legend>
 		  	  <span>
 		  	  <img src="product_images/${productVO.image1}"/>
 		  	  <img src="product_images/${productVO.image2}"/>
@@ -58,12 +58,12 @@
                         <input type="radio" name="rvtime" value="17:00">17:00
                       </label><br>
                 </div>
-                    <p style="text-align: center;">예약취소는 1일전까지 가능하며, No-Show시 패널티가 부과됩니다.</p>
+                    <p style="text-align: center; font-size:20px;">예약취소는 1일전까지 가능하며, No-Show시 패널티가 부과됩니다.</p>
 		  	  </div>
 	  	</fieldset>
         <div class="clear"></div>
 
-        <div id="buttons">
+        <div id="buttons" style="margin-top:20px;">
             <input type="submit" value="예약하기" onclick="go_rsv()">
             <input type="button" value="목록" onclick="location.href='productKind'">
         </div>

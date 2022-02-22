@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.member-mapping">
+
+<select id="getMember" resultType="member">
+	SELECT * FROM member WHERE id=#{id}
+</select>
+
+<select id="confirmId" resultType="String">
+	SELECT pwd FROM member WHERE id=#{id}
+</select>
+
+<select id="selectAddressByDong" resultType="address">
+	SELECT * FROM address WHERE dong LIKE '%'||#{dong}||'%' 
+</select>
+
+<insert id="insertMember">
+	INSERT INTO member(id,pwd,name,email,phone,zip_num,address) 
+		VALUES(#{id},#{pwd},#{name},#{email},#{phone},#{zip_num},#{address})
+</insert>
+</mapper>

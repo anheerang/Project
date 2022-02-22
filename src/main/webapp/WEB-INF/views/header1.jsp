@@ -6,15 +6,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="login.css">
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <title>MYHOME HOMEPAGE</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/login.css">
+
+	    <!-- Custom fonts for this template -->
+	    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	    <link
+	        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+	        rel="stylesheet">
+	    <!-- Custom styles for this template -->
+	    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+	    <!-- Custom styles for this page -->
+	    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+	    
+		<!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(239, 247, 231);">
 <div id="wrap">
 <!--header.jsp-->
 <!-- 헤더파일 들어가는 곳 시작 -->
