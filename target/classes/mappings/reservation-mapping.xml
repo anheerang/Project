@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.reservation-mapping">
+
+<insert id="insertRsv">
+	INSERT INTO rsv(rseq,id,rvdate,rvtime,pseq)
+		VALUES(rsv_seq.NEXTVAL,#{id},#{rvdate},#{rvtime},#{pseq}) 
+</insert>
+
+<select id="listRsv" parameterType="String" resultType="rsv">
+	SELECT * FROM rsv_view WHERE id=#{id} 
+</select>
+</mapper>

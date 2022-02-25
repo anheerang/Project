@@ -14,7 +14,7 @@
         <input type="button" value="회원가입" class="cancel" 
                 onclick="location='contract'"> 
         <input type="button" value="아이디/비밀번호찾기" class="submit"
-                onclick="find_id_form()">
+                onclick="find_id_form()" style="font-size:12px;padding-left:10px;">
       </div>
     </form>
   </div>

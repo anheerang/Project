@@ -31,7 +31,10 @@
 		<!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="member/Member.js" type="text/javascript"></script>
+        <script src="mypage/mypage.js" type="text/javascript"></script>
 </head>
 
  <body class="d-flex flex-column h-100">
@@ -52,32 +55,29 @@
             <nav id="nav_menu" style="float:right;">
             <ul>
                 <li>
-                    <a href="마이페이지화면">MY PAGE</a>
+                    <a href="rsv_list">MY PAGE</a>
                 </li>
                 <li>
-                    <a href="후기에관한 화면">REVIEW</a>
+                    <a href="review_list">REVIEW</a>
                 </li>
                 <li>
-                    <a href="qna화면">Q&amp;A</a>
+                    <a href="qna_list">Q&amp;A</a>
                 </li>
+	            <li>
+	                <a href="contract">JOIN</a>
+	            </li>
                 <c:choose>
                 <c:when test="${empty sessionScope.loginUser}">
-                <li>
-                    <a href="login_form">LOGIN</a>
-                </li>
+	                <li>
+	                    <a href="login_form">LOGIN</a>
+	                </li>
                 </c:when>
                 <c:otherwise>
-                <!-- <li>
-                ${sessionScope.loginUser.name}(${sessionScope.loginUser.id})
-                </li>
-                <li>
-                    <a href="logout">LOGOUT</a>
-            </li>-->
+	                <li>
+	                    <a href="logout">LOGOUT</a>
+	           	    </li>
                 </c:otherwise>
                 </c:choose>
-            <li>
-                <a herf="회원가입화면">JOIN</a>
-            </li>
                 </ul>
             </nav>
      <div class="clear"></div>

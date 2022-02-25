@@ -9,4 +9,6 @@ public interface ProductService {
 	ProductVO getProduct(ProductVO vo);
 
 	List<ProductVO> getProductList();
+	
+	List<ProductVO> listProduct(String userid);
 }

@@ -24,4 +24,9 @@ public class ProductDAO {
 		
 		return mybatis.selectList("mappings.product-mapping.getProductList");
 	}
+	
+	public List<ProductVO> listProduct(String userid){
+		
+		return mybatis.selectList("mappings.product-mapping.listProduct",userid);
+	}
 }

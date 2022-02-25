@@ -16,8 +16,8 @@
                 <c:forEach items="${likeList}" var="likeVO">
                 <tr>
                     <td>${likeVO.lseq}</td>
-                    <td><img src="prodcut_images/${productVO.image1}"/></td>
-                    <td><a href="product_detail?pseq=${productVO.pseq}">${likeVO.pname}</a></td>
+                    <td><img src="prodcut_images/${likeVO.image1}"/></td>
+                    <td><a href="product_detail?pseq=${likeVO.pseq}">${likeVO.pname}</a></td>
                     <td><a href="#" onclick="go_like_delete()">삭제</a></td>
                 </tr>
                 </c:forEach>

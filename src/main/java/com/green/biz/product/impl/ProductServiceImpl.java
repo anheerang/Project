@@ -27,4 +27,10 @@ public class ProductServiceImpl implements ProductService {
 		return pDao.getProductList();
 	}
 
+	@Override
+	public List<ProductVO> listProduct(String userid) {
+		
+		return pDao.listProduct(userid);
+	}
+
 }

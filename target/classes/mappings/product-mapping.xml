@@ -5,9 +5,13 @@
 <!-- 상품전체리스트조회 -->
 <select id="getProductList" resultType="product">
 	SELECT pseq,image1,name,price 
-	  FROM product 
-		
+	  FROM product 	
 </select>
+
+<select id="listProduct" resultType="product">
+	SELECT * FROM product
+</select>
+
 <!-- 상품상세조회 -->
 <select id="getProduct" resultType="product">
 	SELECT * FROM product WHERE pseq=#{pseq}

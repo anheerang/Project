@@ -34,6 +34,8 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="member/Member.js" ></script>
+		<script src="mypage/mypage.js" type="text/javascript"></script>
 </head>
 <body style="background-color: rgb(239, 247, 231);">
 <div id="wrap">
@@ -53,11 +55,8 @@
 	      <h1 class="main_logo"><a href="index">MY<span>HOME</span></a></h1>
 	   </div>
 	   <!-- 로고 들어가는 곳 끝 -->
-	   <nav id="nav_menu">
+	   <nav id="nav_menu" style="float:right;">
 	   <ul>
-       	<li>
-       	    <a href="집매물화면">HOUSE</a>
-       	</li> 
        	<li>
        		<a href="마이페이지화면">MY PAGE</a>
        	</li>
@@ -74,9 +73,6 @@
        	</li>
        	</c:when>
        	<c:otherwise>
-       	<li>
-       	 <!-- ${sessionScope.loginUser.name}(${sessionScope.loginUser.id})-->
-       	</li>
        	<li>
        		<a href="logout">LOGOUT</a>
 		</li>
