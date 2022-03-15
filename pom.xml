@@ -52,7 +52,7 @@
 			<artifactId>ojdbc</artifactId>
 			<version>18.3</version>
 			<scope>system</scope>
-			<systemPath>E:\DB\ojdbc8.jar</systemPath>
+			<systemPath>C:\DB\ojdbc8.jar</systemPath>
 		</dependency>
 		
 		<!-- Spring JDBC -->
@@ -237,6 +237,10 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+          		<artifactId>maven-war-plugin</artifactId>
+          		<version>3.2.2</version>
+        	</plugin>
         </plugins>
     </build>
 </project>

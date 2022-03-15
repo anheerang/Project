@@ -4,7 +4,7 @@
 <div class="clear"></div>
 	
 	<footer>
-	  <div id="copy">
+	  <div id="copy" style="height:180px;">
 	  All contents Copyright© 2022 MY HOME Inc. all rights reserved<br>
 	  Contact mail : my_home@myhome.com <br>
 	  Tel : +82 32 256 9583<br>

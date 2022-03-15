@@ -1,5 +1,8 @@
 package com.green.biz.member;
 
+import java.util.List;
+
+import com.green.biz.dto.AddressVO;
 import com.green.biz.dto.MemberVO;
 
 public interface MemberService {
@@ -11,5 +14,9 @@ public interface MemberService {
 	int confirmId(String id);
 
 	int loginId(MemberVO vo);
+	
+	List<AddressVO> selectAddressByDong(String dong);
+	
+	List<MemberVO> listMember(String name);
 
 }

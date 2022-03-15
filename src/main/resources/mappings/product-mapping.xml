@@ -5,12 +5,82 @@
 <!-- 상품전체리스트조회 -->
 <select id="getProductList" resultType="product">
 	SELECT pseq,image1,name,price 
-	  FROM product 
-		
+	  FROM product 	
 </select>
+
+<select id="listProduct" resultType="product">
+	SELECT * FROM product
+</select>
+
 <!-- 상품상세조회 -->
 <select id="getProduct" resultType="product">
 	SELECT * FROM product WHERE pseq=#{pseq}
 </select>
 
+<!-- 분류별 상품조회 -->
+<select id="categoryProduct" resultType="product">
+	SELECT pseq,image1,name,price FROM product 
+		WHERE
+			<choose>
+				<when test="buyKind !=null">
+					buyKind IN
+						<foreach item="buyKind" index="index" collection="buyKind.split(',')" open="(" separator="," close=")">
+							#{buyKind}
+						</foreach>
+				</when>
+				<otherwise>
+					buyKind LIKE '%%'
+				</otherwise>
+			</choose>
+			<choose>
+				<when test="homeKind !=null">
+					AND homeKind IN
+						<foreach item="homeKind" index="index" collection="homeKind.split(',')" open="(" separator="," close=")">
+							#{homeKind}
+						</foreach>
+				</when>
+				<otherwise>
+					AND homeKind LIKE '%%'
+				</otherwise>
+			</choose>
+			<choose>
+				<when test="roomKind !=null">
+					AND roomKind IN
+						<foreach item="roomKind" index="index" collection="roomKind.split(',')" open="(" separator="," close=")">
+							#{roomKind}
+						</foreach>
+				</when>
+				<otherwise>
+					AND roomKind LIKE '%%'
+				</otherwise>
+			</choose>
+</select>
+
+
+<!-- 관리자 -->
+<select id="adminListProduct" parameterType="String" resultType="product">
+	SELECT pseq,name,regdate,contractResult
+	  FROM product
+	 WHERE name LIKE '%'||#{name}||'%'
+	 ORDER BY pseq DESC
+</select>
+
+<insert id="insertProduct">
+	INSERT INTO product(pseq,buyKind,homeKind,roomKind,image1,image2,image3,name,price,area,content,address)
+		VALUES(product_seq.NEXTVAL,#{buyKind},#{homeKind},#{roomKind},#{image1},#{image2},#{image3},#{name},#{price},#{area},#{content},#{address})
+</insert>
+
+<update id="updateProduct" >
+	UPDATE product SET image1=#{image1},image2=#{image2},image3=#{image3},name=#{name},
+						price=#{price},area=#{area},content=#{content},address=#{address}
+				WHERE pseq=#{pseq}
+</update>
+
+<!-- 상품번호,상품명찾기 -->
+<select id="selectProductbyName" resultType="product">
+	select pseq,name FROM product WHERE name LIKE '%'||#{name}||'%'
+</select>
 </mapper>
+
+
+

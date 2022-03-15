@@ -17,7 +17,7 @@
                     <td>${rsvVO.rseq}</td>
                     <td><img src="product_images/${productVO.image1}"/></td>
                     <td><a href="product_detail?pseq=${productVO.pseq}">${rsvVO.pname}</a></td>
-                    <td><!-- ${rsvVO.rvdate}+${rsvVO.rvtime}-->2022년 2월 18일 2시</td>
+                    <td>${rsvVO.rvdate}+${rsvVO.rvtime}</td>
                     <td><a href="#" onclick="go_rsv_cancle()">예약취소</a></td>
                 </tr>
                 </c:forEach>

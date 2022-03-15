@@ -8,8 +8,10 @@
 <meta charset="UTF-8">
 <title>상품명검색</title>
 <script type="text/javascript">
-function result(pname){
-	opener.document.frm.product_name.value= pname;
+function result(pname,pseq){
+	opener.document.frm.pname.value= pname;
+	opener.document.frm.pseq.value=pseq;
+	self.close();
 }
 </script>
 </head>
@@ -22,12 +24,15 @@ function result(pname){
 	</form>
 	<table>
 		<tr>
-			<th>상품명</th>
+			<th>상품번호</th><th>상품명</th>
 		</tr>
 		<c:forEach items="${productList}" var="productVO">
 		<tr>
 			<td>
-				<a href="#" onclick="return result('${productVO.name}')">${productVO.name}</a>
+				${productVO.pseq}
+			</td>
+			<td>
+				<a href="#" onclick="return result('${productVO.name}','${productVO.pseq}')">${productVO.name}</a>
 			</td>
 		</tr>
 		</c:forEach>

@@ -18,4 +18,11 @@
 	INSERT INTO member(id,pwd,name,email,phone,zip_num,address) 
 		VALUES(#{id},#{pwd},#{name},#{email},#{phone},#{zip_num},#{address})
 </insert>
+
+<select id="listMember" resultType="member">
+	SELECT * FROM member
+	 WHERE name LIKE '%'||#{name}||'%'
+	 ORDER BY name
+		
+</select>
 </mapper>

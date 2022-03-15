@@ -17,7 +17,7 @@ public class ProductVO {
 	private String roomKind;
 	private String price;
 	private String address;
-	private int area ;
+	private Integer area ;
 	private String content;
 	private String image1;
 	private String image2;

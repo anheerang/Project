@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.contract-mapping">
+
+<select id="contractList" resultType="contract">
+	SELECT * FROM contract_view 
+</select>
+
+<insert id="insertContract">
+	INSERT INTO contract(cseq,pseq,id,price,ctdate)
+		VALUES(contract_seq.nextval,#{pseq},#{id},#{price},#{ctdate})
+</insert>
+
+<select id="getContract" resultType="contract">
+	SELECT pseq,id,pname,ctdate
+	  FROM contract_view
+	 WHERE id=#{id}
+</select>
+
+</mapper>

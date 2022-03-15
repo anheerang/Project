@@ -262,13 +262,7 @@ form fieldset{
     margin-top:80px;
 }
 
-form fieldset legend{
-    border-bottom : 1px solid black;
-    font-size: 25px;
-    font-weight: 300;
-    font-style: italic;
-    color: #0e411d;
-}
+
 
 form label{
     width:170px ;
@@ -279,28 +273,11 @@ form label{
     padding-right: 5px;
 }
 
-form input{
-    position:relative;
-    left:20px;
-    margin:5px 0 ;
-    margin-left:5px;
-    size:50px;
-    background: transparent;
-    border: none;
-    width: 100px;
-    height: 30px;
-    color: rgb(76, 110, 65) !important;
-    border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.28);
-    border-radius: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 form input:hover,form input:focus{
     background: transparent;
     outline:none;
     box-shadow: none;
     border-color: rgba(32, 45, 102, 0.4);
-    
 }

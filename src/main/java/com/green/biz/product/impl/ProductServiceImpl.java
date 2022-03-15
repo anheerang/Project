@@ -27,4 +27,42 @@ public class ProductServiceImpl implements ProductService {
 		return pDao.getProductList();
 	}
 
+	@Override
+	public List<ProductVO> listProduct(String userid) {
+		
+		return pDao.listProduct(userid);
+	}
+
+	@Override
+	public List<ProductVO> categoryProduct(ProductVO vo) {
+		
+		return pDao.categoryProduct(vo);
+	}
+
+	@Override
+	public List<ProductVO> adminListProduct(String name) {
+		
+		return pDao.adminListProduct(name);
+	}
+
+	@Override
+	public void insertProduct(ProductVO vo) {
+		
+		pDao.insertProduct(vo);
+	}
+
+	@Override
+	public void updateProduct(ProductVO vo) {
+		
+		pDao.updateProduct(vo);
+	}
+
+	@Override
+	public List<ProductVO> selectProductbyName(String name) {
+		
+		return pDao.selectProductbyName(name);
+	}
+
+
+
 }

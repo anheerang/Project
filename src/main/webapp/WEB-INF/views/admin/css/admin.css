@@ -35,7 +35,8 @@ a{
     width:100px;
     height:40px;
     border: 1px solid transparent;
-    background: rgba(169, 206, 117, 0.79);
+    background: rgba(129, 206, 117, 0.79);
+    color:black;
 }
 
 .btn:hover,.btn:focus{
@@ -84,6 +85,7 @@ nav#sub_menu ul li{
 
 nav#sub_menu a{
     color:rgb(10, 124, 245);
+    font-size:16px;
 }
 
 nav#sub_menu a:hover,nav#sub_menu a:focus{

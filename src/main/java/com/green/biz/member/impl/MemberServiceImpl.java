@@ -1,9 +1,12 @@
 package com.green.biz.member.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.green.biz.dao.MemberDAO;
+import com.green.biz.dto.AddressVO;
 import com.green.biz.dto.MemberVO;
 import com.green.biz.member.MemberService;
 
@@ -35,6 +38,18 @@ public class MemberServiceImpl implements MemberService {
 	public int loginId(MemberVO vo) {
 		
 		return mDao.loginId(vo);
+	}
+
+	@Override
+	public List<AddressVO> selectAddressByDong(String dong) {
+		
+		return mDao.selectAddressByDong(dong);
+	}
+
+	@Override
+	public List<MemberVO> listMember(String name) {
+		
+		return mDao.listMember(name);
 	}
 
 }

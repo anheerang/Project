@@ -1,7 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp"%>
-
+<style>
+article{
+	color:#0e411d;
+}
+#memberList{
+	text-align:center;
+	display:inline-block;
+	margin-top:30px;
+}
+#memberList th,td{
+	width:100px;
+}
+</style>
+<script type="text/javascript">
+  function go_view(qseq) {
+    var theForm = document.frm;
+    theForm.qseq.value = qseq;
+    theForm.action = "admin_qna_detail";
+    theForm.submit();
+  }
+</script>
 <article>
     <h1>Q&amp;A 게시판 리스트</h1>
     <form name="frm" method="post">
@@ -16,7 +36,7 @@
                     <td><a href="#" onclick="javascript:go_view('${qnaVO.qseq}')">${qnaVO.subject}</a></td>
                     <td>${qnaVO.id}</td>
                     <td><fmt:formatDate value="${qnaVO.indate}"/></td>
-                    <td>
+                    <td style="width:130px;">
                         <c:choose>
                             <c:when test='${qnaVO.rep=="1"}'>답변미완료</c:when>
                             <c:otherwise>답변완료</c:otherwise>

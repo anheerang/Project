@@ -28,14 +28,14 @@ function worker_check(){
         <header>
             <div>
                 <a href="admin_login_form">
-                    <img src="images/myhome.png" style="width:120px;margin-top:40px;">
+                    <img src="admin/images/myhome.png" style="width:120px;margin-top:40px;">
                 </a>
             </div>
         </header>
         <div class="clear"></div>
         <article>
             <div id="loginform">
-                <img src="images/admin.png" style="height:200px;">
+                <img src="admin/images/admin.png" style="height:200px;">
                 <form name="frm" method="post" action="admin_login">
                     <table>
                         <tr>
@@ -51,6 +51,7 @@ function worker_check(){
                         <tr>
                             <td colspan="2">
                                 <input class="btn" type="submit" value="업무로그인" onclick="return worker_check()"><br>
+                            	<h4 style="color:green;margin-left:20px;">${message}</h4>
                             </td>
                         </tr>
                     </table>

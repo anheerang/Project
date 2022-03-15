@@ -56,6 +56,11 @@ public class MemberDAO  {
 		
 		return mybatis.selectList("mappings.member-mapping.selectAddressByDong", dong);
 	}
+	
+	public List<MemberVO> listMember(String name){
+		
+		return mybatis.selectList("mappings.member-mapping.listMember", name);
+	}
 }	
 
 

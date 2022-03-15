@@ -30,7 +30,7 @@
                                 <td>${qnaVO.qseq}</td>
                                 <td><a href="qna_view?qseq=${qnaVO.qseq}">${qnaVO.subject}</a></td>
                                 <td>${qnaVO.id}</td>
-                                <td><fmt:formatDate value="${qnaVO.indate}" type="date"/>2022.02.18</td>
+                                <td><fmt:formatDate value="${qnaVO.indate}" type="date"/></td>
                                 <td>
                                     <c:choose>
                                         <c:when test="${qnaVO.rep==1}">미완료</c:when>
@@ -41,9 +41,10 @@
                         </tbody>
                     </c:forEach>
                 </table>
-            </form>
-        </div>
-	</div>
- </div>
+             </div>
+		</div>
+	</form>
+</div>
+
 
 <%@ include file="../footer.jsp" %>

@@ -181,6 +181,7 @@ article{
     padding-right: 10px;
     font-size: 1em;
     line-height: 1.5em;
+    min-height:600px;
 }
 
 article .myhome{
@@ -270,27 +271,7 @@ form fieldset legend{
     padding:20px;
 }
 
-#itemdetail button{
-    margin-left:750px;
-    border-radius: 40px;
-    background: transparent;
-    border: none;
-    width: 128px;
-    height: 30px;
-    border: 1px solid transparent;
-    background: rgba(250, 184, 60, 0.445);
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size:16px;
-    color:#cb5e65;
-}
 
-#itemdetail button:hover , #itemdetail button:focus{
-    background: rgb(236, 157, 163);
-    color:rgb(57, 40, 42);
-    outline:none;
-    box-shadow: none;
-}
 
 #contents{
     margin-top:50px;
@@ -407,42 +388,7 @@ form fieldset legend{
 }
 
 /*rsvList*/
-#sub_menu{
-    float:left;
-    width:250px;
-    margin:20px 0 0 40px;
-}
 
-#sub_menu ul{
-    list-style: none;
-}
-
-#sub_menu li{
-    padding:10px;
-}
-
-#sub_menu a {
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding:20px;
-    border-radius: 30px;
-    background: transparent;
-    border: none;
-    width: 130px;
-    height: 30px;
-    border: 1px solid transparent;
-    background: rgba(182, 235, 86, 0.445);
-    font-size:20px;
-    color:#0e411d;
-}
-
-#sub_menu a:hover,#sub_menu a:focus{
-    background: rgb(44,150,72,0.445);
-    outline:none;
-    box-shadow: none;
-    color:rgb(232, 238, 197) !important;
-}
 
 #contentList{
     text-align: center;
@@ -548,54 +494,16 @@ form fieldset legend{
     height:40px;
 }
 
-#qnaList form label{
-    width:170px ; 
-    left:160px;
-    margin:5px 0;
-    padding-right: 5px;
-}
 
-#qnaList form input{
-    position:relative;
-    left:20px;
-    size:50px;
-    background: transparent;
-    border: none;
-    width: 300px;
-    height: 30px;
-    color: rgb(76, 110, 65) !important;
-    border: 1px solid transparent;
-    background: rgba(119, 213, 161, 0.28);
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#qnaList form textarea{
-    position:relative;
-    left:20px;
-    margin:5px 0 ;
-    margin-left:5px;
-    size:50px;
-    background: transparent;
-    width:300px;
-    height: 100px;
-    border: none;
-    color: rgb(76, 110, 65) !important;
-    border: 1px solid transparent;
-    background: rgba(119, 213, 161, 0.28);
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 #qnaButtons{
     display: inline-block;
+    border-radius:20px;
+    border:none;
 }
 
 #qnaButtons input:hover,#qnaButtons input:focus{
     background: rgba(216, 228, 146, 0.8);
-    outline:none;
     box-shadow: none;
     color:rgb(64, 161, 90) !important;
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.qna-mapping">
+
+<!-- qna게시판 리스트 -->
+<select id="listQna" resultType="qna">
+	SELECT * FROM qna WHERE id=#{id} ORDER BY qseq DESC
+</select>
+<!-- 글 상세보기 -->
+<select id="getQna" resultType="qna">
+	SELECT * FROM qna WHERE qseq=#{qseq}
+</select>
+<!-- 글 작성하기 -->
+<insert id="insertQna">
+	INSERT INTO qna(qseq,subject,content,id)
+		VALUES(qna_seq.NEXTVAL,#{subject},#{content},#{id})
+</insert>
+
+<!-- 관리자 -->
+<select id="adminQnaList" resultType="qna">
+	SELECT qseq,subject,content,id,rep,indate
+	  FROM qna
+	 ORDER BY qseq DESC
+</select>
+
+<update id="updateQna">
+	UPDATE qna 
+	   SET reply=#{reply} , rep='2'
+	 WHERE qseq=#{qseq}
+</update>
+</mapper>

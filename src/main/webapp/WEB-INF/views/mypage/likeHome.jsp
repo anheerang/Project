@@ -6,7 +6,12 @@
 
 <article>
     <h2 style="font-size:30px;margin-left:120px;"> 선호매물 목록 </h2>
-    
+     <c:choose>
+   	 <c:when test="${likeList.size() == 0}">
+        <h3 style="color:#0e411d;text-align: center;margin:100px 0 0 150px;">목록이 없습니다.</h3>
+     </c:when>
+     <c:otherwise>
+      <form name="formm" id="theform" method="post">
         <div id="contentList">
             <table>
                 <tr>
@@ -16,13 +21,16 @@
                 <c:forEach items="${likeList}" var="likeVO">
                 <tr>
                     <td>${likeVO.lseq}</td>
-                    <td><img src="prodcut_images/${productVO.image1}"/></td>
-                    <td><a href="product_detail?pseq=${productVO.pseq}">${likeVO.pname}</a></td>
-                    <td><a href="#" onclick="go_like_delete()">삭제</a></td>
+                    <td><img src="product_images/${likeVO.image1}"/></td>
+                    <td><a href="product_detail?pseq=${likeVO.pseq}">${likeVO.pname}</a></td>
+                    <td><a href="like_delete?lseq=${likeVO.lseq}">삭제</a></td>
                 </tr>
                 </c:forEach>
             </table>
         </div>
+      </form>
+      </c:otherwise>
+      </c:choose>
  </article>
 
 

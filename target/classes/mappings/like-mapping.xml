@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.like-mapping">
+
+<select id="listLike" parameterType="String" resultType="like">
+SELECT * FROM like_view WHERE id=#{id} ORDER BY lseq 
+</select>
+
+<insert id="insertLike">
+INSERT INTO likeProduct(lseq,id,pseq)
+		VALUES(like_seq.NEXTVAL,#{id},#{pseq})
+</insert>
+
+<delete id="deleteLike">
+DELETE FROM likeProduct WHERE lseq=#{lseq}
+</delete>
+</mapper>
