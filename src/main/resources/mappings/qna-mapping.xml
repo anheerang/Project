@@ -15,6 +15,7 @@
 	INSERT INTO qna(qseq,subject,content,id)
 		VALUES(qna_seq.NEXTVAL,#{subject},#{content},#{id})
 </insert>
+<<<<<<< HEAD
 
 <!-- 관리자 -->
 <select id="adminQnaList" resultType="qna">
@@ -28,4 +29,6 @@
 	   SET reply=#{reply} , rep='2'
 	 WHERE qseq=#{qseq}
 </update>
+=======
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
 </mapper>

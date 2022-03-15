@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: Montserrat, sans-serif ;
     color: #1a1b1f ;
@@ -280,4 +281,288 @@ form input:hover,form input:focus{
     outline:none;
     box-shadow: none;
     border-color: rgba(32, 45, 102, 0.4);
+=======
+body{
+    font-family: Montserrat, sans-serif ;
+    color: #1a1b1f ;
+    font-size: 16px ;
+    line-height: 28px ;
+    font-weight:400 ;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#wrap {
+    margin:auto;
+}
+
+#wrap header{
+    width:1100px; 
+    text-align:left;
+    margin:0;
+    margin-right:auto;
+    margin-left:auto;
+    background-repeat:repeat-y;    
+}
+
+.clear{clear:both;}
+
+#logo{
+    float:left;
+    width:180px;
+    height:100px;
+    margin:15px 0 0 40px;
+}
+
+#logo a{
+    color:rgb(32, 100, 54);
+}
+
+#logo a:hover,#logo a:focus{
+    color: rgb(69, 159, 109) !important;
+}
+
+#logo span{
+    font-weight: 300;
+}
+
+#logo h1 .main_logo{
+    position:relative;
+    font-size: 28px;
+    margin-top: 35px;
+    font-weight: 700;
+    float: left;
+    padding-left: 40px;
+}
+
+nav#nav_menu{
+    display: inline-block;
+    margin-left:20px;
+}
+
+nav#nav_menu ul{
+    list-style:none;
+}
+
+nav#nav_menu ul li{
+   float:left;
+   margin:0 15px;  
+   font-size: 14pt; 
+}
+
+nav#nav_menu a,nav#admin_menu a{
+	display:block; 
+    height:20px;
+    text-decoration:none;
+    color:rgb(32, 100, 54);
+    padding: 15px;
+    margin-top:10px;
+}
+
+nav#nav_menu a:hover,nav#admin_menu a:hover{
+    background-repeat:repeat-x;
+    background-position:bottom;
+    color:rgb(69, 159, 109);
+}
+
+nav#admin_menu{
+    float:right;
+}
+
+nav#admin_menu ul{
+    list-style: none;
+}
+
+#front#item.org{
+    display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+#main_img{
+    padding: 20px ;
+    text-align:center ;
+    background-size: cover;
+    min-width: 100%;
+}
+
+#front {
+    margin: 50px 0 5px 20px ;
+    text-align: center;
+}
+
+#copy{
+    text-align: center;
+    margin-top:20px;
+    background-color:rgb(217,239,206) ;
+    height:95px;
+    padding:45px 0 ;
+    font-size:16px;
+}
+
+#out{
+    text-align: center;
+}
+
+article{
+    text-align:center;
+    position: relative;
+    margin:auto;
+    margin:80px 0 ;
+}
+
+article h2{
+    font-size: 30px;
+    color:rgb(32, 100, 54);
+    font-weight: 550;
+}
+
+article p{
+    margin-top:60px;
+    font-size:18px;
+}
+
+textarea{
+    width:600px;
+    height: 300px;
+}
+
+#login{
+    position:relative;
+    display: inline-block;
+    margin:auto;
+    margin:80px 0;
+    width:700px;
+    height:500px;
+}
+
+#login h1{
+    color:rgb(118, 173, 102);
+    margin-bottom: 100px;
+    
+}
+#login .userid,#login .userpwd{
+    margin-bottom: 20px;
+}
+
+#login .userid,#login .userpwd{
+  background: transparent;
+  border: none;
+  width: 250px;
+  height: 50px;
+  color: rgb(118, 173, 102) !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#login .userid:hover ,#login .userpwd:hover, #login .userid:focus,#login .userpwd:focus{
+    background: transparent;
+    outline:none;
+    box-shadow: none;
+    border-color: rgba(32, 45, 102, 0.4);
+}
+
+#buttons button{
+    margin-bottom: 35px;
+    margin-left:40px;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width: 280px;
+    height: 50px;
+    border: 1px solid transparent;
+    background: rgba(44, 150, 72, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:16px;
+    color:#0e411d;
+}
+
+#buttons input{
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    width:130px;
+    height:30px;
+    margin:auto;
+    border: 1px solid transparent;
+    background: rgba(169, 206, 117, 0.49);
+}
+
+#buttons button:hover ,#buttons button:focus {
+    background: rgba(203, 245, 144,0.7);
+    outline:none;
+    box-shadow: none;
+}
+
+#buttons input:hover ,#buttons input:focus {
+    background: rgb(44,150,72,0.445);
+    outline:none;
+    box-shadow: none;
+    color:rgb(232, 238, 197) !important;
+}
+
+
+#next input{
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    margin-top:30px;
+    width:160px;
+    height:40px;
+    font-size:16px;
+    border: 1px solid transparent;
+    background: rgba(44, 150, 72, 0.445);
+    color:#0e411d;
+}
+
+#next input:hover , #next input:focus{
+    background: rgba(203, 245, 144,0.7);
+    outline:none;
+    box-shadow: none;
+    color:rgb(18, 18, 14) !important;
+}
+
+.agree{
+    width: 15px;
+    height:15px;
+    margin-right:20px;
+}
+
+
+form fieldset{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width:800px;
+    height:250px;
+    padding-top:70px;
+    border:none ;
+    margin-top:80px;
+}
+
+
+
+form label{
+    width:170px ;
+    position:absolute;
+    left:160px;
+    display: inline-block;
+    margin:5px 0;
+    padding-right: 5px;
+}
+
+
+
+form input:hover,form input:focus{
+    background: transparent;
+    outline:none;
+    box-shadow: none;
+    border-color: rgba(32, 45, 102, 0.4);
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
 }

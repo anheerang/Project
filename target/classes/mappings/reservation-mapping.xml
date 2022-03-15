@@ -8,6 +8,7 @@
 </insert>
 
 <select id="listRsv" parameterType="String" resultType="rsv">
+<<<<<<< HEAD
 	SELECT * FROM rsv_view WHERE id=#{id} ORDER BY(CASE WHEN result='1' THEN 1 ELSE 2 END),rvdate ASC
 </select>
 
@@ -40,4 +41,8 @@
 <update id="cancelRsv">
 	UPDATE rsv SET result='3' WHERE rseq=#{rseq}
 </update>
+=======
+	SELECT * FROM rsv_view WHERE id=#{id} 
+</select>
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
 </mapper>

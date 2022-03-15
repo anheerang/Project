@@ -7,6 +7,7 @@
 	INSERT INTO review(vseq,pseq,id,subject,content)
 		VALUES(review_seq.NEXTVAL,#{pseq},#{id},#{subject},#{content})
 </insert>
+<<<<<<< HEAD
 
 <!-- 쓰기권한 -->
 <select id="confirmContract" resultType="String">
@@ -18,6 +19,13 @@
 	SELECT vseq,subject,id,indate 
 	  FROM review
 	 ORDER BY vseq DESC 
+=======
+<!-- 쓰기권한 -->
+
+<!-- 리뷰리스트조회 -->
+<select id="listReview" resultType="review">
+	SELECT vseq,subject,id,indate FROM review
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
 </select>
 
 <!-- 리뷰내용조회 -->

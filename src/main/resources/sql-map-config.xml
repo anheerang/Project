@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -33,3 +34,36 @@
 
 
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+	<configuration>
+	<typeAliases>
+		<typeAlias type="com.green.biz.dto.ProductVO" alias="product" />
+		<typeAlias type="com.green.biz.dto.MemberVO" alias="member" />
+		<typeAlias type="com.green.biz.dto.AddressVO" alias="address"/>
+		<typeAlias type="com.green.biz.dto.RsvVO" alias="rsv"/>
+		<typeAlias type="com.green.biz.dto.LikeVO" alias="like"/>
+		<typeAlias type="com.green.biz.dto.ReviewVO" alias="review"/>
+		<typeAlias type="com.green.biz.dto.QnaVO" alias="qna"/>
+	</typeAliases>
+		
+	<!-- SQL명령어들이 저장된 SQL 파일 등록 -->
+	<mappers>
+		<mapper resource="mappings/product-mapping.xml"/>
+		<mapper resource="mappings/member-mapping.xml"/>
+		<mapper resource="mappings/reservation-mapping.xml"/>
+		<mapper resource="mappings/like-mapping.xml"/>
+		<mapper resource="mappings/review-mapping.xml"/>
+		<mapper resource="mappings/qna-mapping.xml"/>
+		
+	</mappers>
+	</configuration>
+	
+
+
+
+
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
