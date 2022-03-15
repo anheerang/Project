@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappings.reservation-mapping">
+
+<insert id="insertRsv">
+	INSERT INTO rsv(rseq,id,rvdate,rvtime,pseq)
+		VALUES(rsv_seq.NEXTVAL,#{id},#{rvdate},#{rvtime},#{pseq}) 
+</insert>
+
+<select id="listRsv" parameterType="String" resultType="rsv">
+<<<<<<< HEAD
+	SELECT * FROM rsv_view WHERE id=#{id} ORDER BY(CASE WHEN result='1' THEN 1 ELSE 2 END),rvdate ASC
+</select>
+
+<select id="getRsv" resultType="rsv">
+	SELECT rseq,id,pname,rvdate,rvtime
+	  FROM rsv_view
+	 WHERE rseq=#{rseq}
+</select>
+
+<select id="getRsvDay" resultType="String">
+	SELECT rvdate,rvtime
+	  FROM rsv
+</select>
+
+<delete id="deleteRsv">
+	DELETE FROM rsv WHERE rseq=#{rseq}
+</delete>
+
+<update id="updateRsv">
+	UPDATE rsv SET result='2' WHERE rseq=#{rseq}
+</update>
+
+<select id="getListRsv" resultType="rsv">
+	SELECT rseq,pseq,id,mname,rvdate,rvtime,result,pname
+	  FROM rsv_view
+	 WHERE mname LIKE '%'||#{mname}||'%'
+	 ORDER BY rvdate 
+</select>
+
+<update id="cancelRsv">
+	UPDATE rsv SET result='3' WHERE rseq=#{rseq}
+</update>
+=======
+	SELECT * FROM rsv_view WHERE id=#{id} 
+</select>
+>>>>>>> branch 'feature' of https://github.com/anheerang/Project.git
+</mapper>
